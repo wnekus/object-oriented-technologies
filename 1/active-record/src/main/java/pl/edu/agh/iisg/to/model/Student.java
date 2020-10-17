@@ -2,9 +2,7 @@ package pl.edu.agh.iisg.to.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 import pl.edu.agh.iisg.to.executor.QueryExecutor;
 
@@ -25,20 +23,22 @@ public class Student {
     }
 
     public static Optional<Student> create(final String firstName, final String lastName, final int indexNumber) {
-        // TODO
-        String sql = "";
+        String insertSql = "INSERT INTO student (first_name, last_name, index_number) VALUES (?, ?, ?);";
+        Object[] args = {firstName, lastName, indexNumber};
 
-        // TODO
-        // it is important to maintain the correct order of the variables
-        Object[] args = { };
-
+        try {
+            int id = QueryExecutor.createAndObtainId(insertSql, args);
+            return Student.findById(id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
         return Optional.empty();
     }
 
     public static Optional<Student> findByIndexNumber(final int indexNumber) {
-        // TODO
-        return Optional.empty();
+        String sql = "SELECT * FROM student WHERE index_number = (?)";
+        return find(indexNumber, sql);
     }
 
     public static Optional<Student> findById(final int id) {
@@ -58,7 +58,40 @@ public class Student {
     }
 
     public Map<Course, Float> createReport() {
-        // TODO additional task
+        String findStudentGrades ="SELECT * FROM grade WHERE student_id = (?)";
+        Object[] args = {id()};
+
+        try{
+            Map<Course, Float> grades = new HashMap<>();
+            Map<Course, Integer> numberOfGrades = new HashMap<>();
+            Map<Course, Float> resultMap = new HashMap<>();
+            ResultSet set = QueryExecutor.read(findStudentGrades, args);
+
+            while(set.next()) {
+                Course course = Course.findById(set.getInt("course_id")).get();
+
+                if (!grades.containsKey(course) && !numberOfGrades.containsKey(course)) {
+                    grades.put(course, set.getFloat("grade"));
+                    numberOfGrades.put(course, 1);
+                } else {
+                    float grade = grades.get(course);
+                    int gradeNumber = numberOfGrades.get(course);
+
+                    grades.replace(course, set.getFloat("grade") + grade);
+                    numberOfGrades.replace(course, gradeNumber + 1);
+                }
+            }
+
+            for(Course course : grades.keySet()){
+                resultMap.put(course, grades.get(course)/numberOfGrades.get(course));
+            }
+
+            return resultMap;
+
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
         return Collections.emptyMap();
     }
 

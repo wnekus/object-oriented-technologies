@@ -59,30 +59,47 @@ public class Course {
     }
 
     public boolean enrollStudent(final Student student) {
-        String enrollStudentSql = "";
-        Object[] args = {
+        String enrollStudentSql = "INSERT INTO student_course (student_id, course_id) VALUES (?,?)";
+        Object[] args = {student.id(), id()};
 
-        };
-
-        //TODO
-
-        return false;
+        try {
+            QueryExecutor.createAndObtainId(enrollStudentSql, args);
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     public List<Student> studentList() {
-    	String findStudentListSql ="";
-        Object[] args = {
+        String findStudentListSql ="SELECT * FROM Student WHERE id IN (SELECT student_id FROM Student_Course WHERE course_id = ?)";
+        Object[] args = {id()};
 
-        };
+        List<Student> resultList = new LinkedList<>();
 
-    	List<Student> resultList = new LinkedList<>();
-    	// TODO
+        try{
+            ResultSet set = QueryExecutor.read(findStudentListSql, args);
 
-    	return resultList;
+            while(set.next()){
+                int id = set.getInt("id");
+                String firstName = set.getString("first_name");
+                String lastName = set.getString("last_name");
+                int indexNumber = set.getInt("index_number");
+
+                resultList.add(new Student(id, firstName, lastName, indexNumber));
+            }
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return resultList;
     }
     
     public List<Student> cachedStudentsList() {
-    	//TOTO implement
+    	if(!isStudentsListDownloaded){
+    	    enrolledStudents = studentList();
+    	    isStudentsListDownloaded = true;
+        }
 		return enrolledStudents;
     }
 
