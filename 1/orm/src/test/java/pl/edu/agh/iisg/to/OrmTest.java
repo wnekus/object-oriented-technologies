@@ -120,6 +120,8 @@ public class OrmTest {
         var student2 = studentDao.create("Jan", "Paciaciak", 800126);
         var course = courseDao.create("WDI");
 
+        // W tym tescie jest blad, poniewaz studenci nie sa zapisywani na kurs
+
         var students = course.get().studentSet();
 
         // Then
@@ -134,6 +136,9 @@ public class OrmTest {
 
     @Test
     public void gradeStudentTest() {
+        /* Ten test zostal zle napisany, poniewaz initialStudentStatus i resultStudentGrades
+           zawieraja referencje na ten sam obiekt
+
         // When
         var student = studentDao.create("Kasia", "Kowalska", 900124);
         var course = courseDao.create("MOWNIT 2");
@@ -141,6 +146,8 @@ public class OrmTest {
         var initialStudentGrades = student.get().gradeSet();
         boolean studentGraded = gradeDao.gradeStudent(student.get(), course.get(), 5.0f);
         var resultStudentGrades = student.get().gradeSet();
+        System.out.println(initialStudentGrades.hashCode());
+        System.out.println(resultStudentGrades.hashCode());
 
         // Then
         checkStudent(student);
@@ -149,6 +156,26 @@ public class OrmTest {
         assertTrue(studentGraded);
         assertEquals(0, initialStudentGrades.size());
         assertEquals(1, resultStudentGrades.size());
+
+         */
+
+        // When
+        var student = studentDao.create("Kasia", "Kowalska", 900124);
+        var course = courseDao.create("MOWNIT 2");
+
+        var initialStudentGrades = student.get().gradeSet();
+        assertEquals(0, initialStudentGrades.size());
+
+        boolean studentGraded = gradeDao.gradeStudent(student.get(), course.get(), 5.0f);
+
+        var resultStudentGrades = student.get().gradeSet();
+        assertEquals(1, resultStudentGrades.size());
+
+        // Then
+        checkStudent(student);
+        checkCourse(course);
+
+        assertTrue(studentGraded);
     }
 
     @Test

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.001s</div>
+<div class="counter">0.845s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,52 +79,52 @@
 </thead>
 <tr>
 <td class="success">cachedCourseStudentListTest()</td>
-<td class="success">0.096s</td>
+<td class="success">0.092s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">courseStudentListTest()</td>
-<td class="success">0.226s</td>
+<td class="success">0.120s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">createCourseTest()</td>
-<td class="success">0.063s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">createReportTest()</td>
-<td class="success">0.151s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">createStudentTest()</td>
-<td class="success">0.087s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">enrollStudentTest()</td>
-<td class="success">0.118s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">findCourseTest()</td>
-<td class="success">0.058s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">findStudentIndexTest()</td>
-<td class="success">0.062s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">findStudentTest()</td>
 <td class="success">0.068s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">createReportTest()</td>
+<td class="success">0.121s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createStudentTest()</td>
+<td class="success">0.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">enrollStudentTest()</td>
+<td class="success">0.115s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findCourseTest()</td>
+<td class="success">0.075s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findStudentIndexTest()</td>
+<td class="success">0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">findStudentTest()</td>
+<td class="success">0.058s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">gradeStudentTest()</td>
-<td class="success">0.072s</td>
+<td class="success">0.074s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -132,27 +132,27 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+<pre>Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Loading driver
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Connection created
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.connection.ConnectionProvider close
 INFO: Closing connection
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Loading driver
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.connection.ConnectionProvider init
 INFO: Connection created
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Student
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Course
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Student_Course
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor &lt;clinit&gt;
 INFO: Creating table Grade
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:45 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:23 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student_course.student_id, student_course.course_id)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -226,9 +226,9 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student.index_number)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -302,23 +302,23 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM Student WHERE id IN (SELECT student_id FROM Student_Course WHERE course_id = ?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE index_number = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
 java.sql.SQLException: ResultSet closed
 	at org.sqlite.core.CoreResultSet.checkOpen(CoreResultSet.java:69)
@@ -391,25 +391,25 @@ java.sql.SQLException: ResultSet closed
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM grade WHERE student_id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
 java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: course.name)
 	at org.sqlite.core.DB.newSQLException(DB.java:890)
@@ -483,23 +483,23 @@ java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (U
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM Student WHERE id IN (SELECT student_id FROM Student_Course WHERE course_id = ?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM student WHERE id = (?) executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.executor.QueryExecutor read
 INFO: Query: SELECT * FROM course WHERE id = ? executed.
-Oct 17, 2020 9:21:46 AM pl.edu.agh.iisg.to.connection.ConnectionProvider close
+Oct 17, 2020 9:26:24 AM pl.edu.agh.iisg.to.connection.ConnectionProvider close
 INFO: Closing connection
 </pre>
 </span>
@@ -512,7 +512,7 @@ INFO: Closing connection
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.6.1</a> at Oct 17, 2020, 9:21:47 AM</p>
+<a href="http://www.gradle.org">Gradle 6.6.1</a> at Oct 17, 2020, 9:26:24 AM</p>
 </div>
 </div>
 </body>
