@@ -1,0 +1,14 @@
+pl/edu/agh/school/TermTest.java
+ pl.edu.agh.school.TermTest
+pl/edu/agh/school/StudentTest.java
+ pl.edu.agh.school.StudentTest
+pl/edu/agh/school/TeacherTest.java
+ pl.edu.agh.school.TeacherTest
+pl/edu/agh/school/LessonTest.java
+ pl.edu.agh.school.LessonTest
+pl/edu/agh/school/SchoolClassTest.java
+ pl.edu.agh.school.SchoolClassTest
+pl/edu/agh/school/MarkTest.java
+ pl.edu.agh.school.MarkTest
+pl/edu/agh/school/SubjectTest.java
+ pl.edu.agh.school.SubjectTest

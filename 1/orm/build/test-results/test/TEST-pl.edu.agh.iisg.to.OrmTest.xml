@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2020-10-17T11:05:28" hostname="DESKTOP-PBN2LV4" time="2.678">
+<testsuite name="pl.edu.agh.iisg.to.OrmTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2020-10-19T13:49:13" hostname="DESKTOP-PBN2LV4" time="6.83">
   <properties/>
-  <testcase name="enrollStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="2.172"/>
-  <testcase name="createStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.077"/>
-  <testcase name="courseStudentListTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.071">
+  <testcase name="enrollStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="5.613"/>
+  <testcase name="createStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.281"/>
+  <testcase name="courseStudentListTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.262">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;2&gt; but was: &lt;0&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
 	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
@@ -77,45 +77,45 @@
 	at java.base/java.lang.Thread.run(Thread.java:832)
 </failure>
   </testcase>
-  <testcase name="findStudentIndexTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.03"/>
-  <testcase name="createReportTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.165"/>
-  <testcase name="createCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.066"/>
-  <testcase name="findCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.029"/>
-  <testcase name="gradeStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.061"/>
+  <testcase name="findStudentIndexTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.044"/>
+  <testcase name="createReportTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.194"/>
+  <testcase name="createCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.081"/>
+  <testcase name="findCourseTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.23"/>
+  <testcase name="gradeStudentTest()" classname="pl.edu.agh.iisg.to.OrmTest" time="0.104"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Oct 17, 2020 1:05:28 PM org.hibernate.Version logVersion
+  <system-err><![CDATA[Oct 19, 2020 3:49:13 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {5.2.2.Final}
-Oct 17, 2020 1:05:28 PM org.hibernate.cfg.Environment <clinit>
+Oct 19, 2020 3:49:13 PM org.hibernate.cfg.Environment <clinit>
 INFO: HHH000206: hibernate.properties not found
-Oct 17, 2020 1:05:28 PM org.hibernate.cfg.Environment buildBytecodeProvider
+Oct 19, 2020 3:49:13 PM org.hibernate.cfg.Environment buildBytecodeProvider
 INFO: HHH000021: Bytecode provider name : javassist
-Oct 17, 2020 1:05:29 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+Oct 19, 2020 3:49:14 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
 INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+Oct 19, 2020 3:49:14 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Oct 19, 2020 3:49:14 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:orm-test.db]
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Oct 19, 2020 3:49:14 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001001: Connection properties: {password=****, user=}
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+Oct 19, 2020 3:49:14 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH10001003: Autocommit mode: false
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
+Oct 19, 2020 3:49:14 PM org.hibernate.engine.jdbc.connections.internal.PooledConnections <init>
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-Oct 17, 2020 1:05:29 PM org.hibernate.dialect.Dialect <init>
+Oct 19, 2020 3:49:15 PM org.hibernate.dialect.Dialect <init>
 INFO: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
-Oct 17, 2020 1:05:29 PM org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl useContextualLobCreation
+Oct 19, 2020 3:49:15 PM org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl useContextualLobCreation
 INFO: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
-Oct 17, 2020 1:05:29 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+Oct 19, 2020 3:49:15 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-Oct 17, 2020 1:05:29 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+Oct 19, 2020 3:49:15 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-Oct 17, 2020 1:05:29 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
+Oct 19, 2020 3:49:15 PM org.hibernate.id.enhanced.TableGenerator determineDefaultSegmentValue
 INFO: HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
-Oct 17, 2020 1:05:29 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@9174d80] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-Oct 17, 2020 1:05:30 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2067f172] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-Oct 17, 2020 1:05:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+Oct 19, 2020 3:49:16 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@780fd4c9] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Oct 19, 2020 3:49:17 PM org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
+INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@136a9044] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+Oct 19, 2020 3:49:17 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:62)
@@ -210,7 +210,7 @@ Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:49)
 	... 81 more
 
-Oct 17, 2020 1:05:30 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
+Oct 19, 2020 3:49:17 PM org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl handleException
 WARN: GenerationTarget encountered exception accepting command : Error executing DDL via JDBC Statement
 org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL via JDBC Statement
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:62)
@@ -305,17 +305,17 @@ Caused by: java.sql.SQLException: [SQLITE_ERROR] SQL error or missing database (
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:49)
 	... 81 more
 
-Oct 17, 2020 1:05:30 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
-INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2e41bcb8'
-Oct 17, 2020 1:05:30 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+Oct 19, 2020 3:49:17 PM org.hibernate.tool.schema.internal.SchemaCreatorImpl applyImportSources
+INFO: HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2342a573'
+Oct 19, 2020 3:49:18 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-Oct 17, 2020 1:05:30 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+Oct 19, 2020 3:49:18 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 WARN: SQL Error: 19, SQLState: null
-Oct 17, 2020 1:05:30 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+Oct 19, 2020 3:49:18 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 ERROR: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: student.index_number)
-Oct 17, 2020 1:05:30 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+Oct 19, 2020 3:49:18 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
 INFO: HHH000010: On release of batch it still contained JDBC statements
-Oct 17, 2020 1:05:30 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+Oct 19, 2020 3:49:18 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
 ERROR: HHH000346: Error during managed flush [org.hibernate.exception.GenericJDBCException: could not execute statement]
 javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute statement
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)
@@ -420,13 +420,13 @@ Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint v
 	at org.sqlite.jdbc3.JDBC3PreparedStatement.executeUpdate(JDBC3PreparedStatement.java:86)
 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:204)
 	... 84 more
-Oct 17, 2020 1:05:31 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+Oct 19, 2020 3:49:19 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 WARN: SQL Error: 19, SQLState: null
-Oct 17, 2020 1:05:31 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
+Oct 19, 2020 3:49:19 PM org.hibernate.engine.jdbc.spi.SqlExceptionHelper logExceptions
 ERROR: [SQLITE_CONSTRAINT]  Abort due to constraint violation (UNIQUE constraint failed: course.name)
-Oct 17, 2020 1:05:31 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
+Oct 19, 2020 3:49:19 PM org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl release
 INFO: HHH000010: On release of batch it still contained JDBC statements
-Oct 17, 2020 1:05:31 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
+Oct 19, 2020 3:49:19 PM org.hibernate.internal.ExceptionMapperStandardImpl mapManagedFlushFailure
 ERROR: HHH000346: Error during managed flush [org.hibernate.exception.GenericJDBCException: could not execute statement]
 javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute statement
 	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:147)

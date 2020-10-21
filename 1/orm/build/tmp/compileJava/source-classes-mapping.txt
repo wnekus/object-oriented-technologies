@@ -1,8 +1,7 @@
 pl/edu/agh/iisg/to/Main.java
  pl.edu.agh.iisg.to.Main
-pl/edu/agh/iisg/to/model/Grade.java
- pl.edu.agh.iisg.to.model.Grade
- pl.edu.agh.iisg.to.model.Grade$Columns
+pl/edu/agh/iisg/to/dao/StudentDao.java
+ pl.edu.agh.iisg.to.dao.StudentDao
 pl/edu/agh/iisg/to/dao/GenericDao.java
  pl.edu.agh.iisg.to.dao.GenericDao
 org/hibernate/dialect/SQLiteDialect.java
@@ -24,7 +23,8 @@ org/hibernate/dialect/identity/SQLiteDialectIdentityColumnSupport.java
  org.hibernate.dialect.identity.SQLiteDialectIdentityColumnSupport
 pl/edu/agh/iisg/to/session/SessionService.java
  pl.edu.agh.iisg.to.session.SessionService
-pl/edu/agh/iisg/to/dao/StudentDao.java
- pl.edu.agh.iisg.to.dao.StudentDao
 pl/edu/agh/iisg/to/dao/CourseDao.java
  pl.edu.agh.iisg.to.dao.CourseDao
+pl/edu/agh/iisg/to/model/Grade.java
+ pl.edu.agh.iisg.to.model.Grade
+ pl.edu.agh.iisg.to.model.Grade$Columns

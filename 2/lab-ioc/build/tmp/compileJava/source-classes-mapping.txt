@@ -1,0 +1,44 @@
+pl/edu/agh/school/Term.java
+ pl.edu.agh.school.Term
+pl/edu/agh/school/ITeacher.java
+ pl.edu.agh.school.ITeacher
+pl/edu/agh/school/School.java
+ pl.edu.agh.school.School
+pl/edu/agh/school/Teacher.java
+ pl.edu.agh.school.Teacher
+pl/edu/agh/school/MarkValue.java
+ pl.edu.agh.school.MarkValue
+pl/edu/agh/school/Person.java
+ pl.edu.agh.school.Person
+pl/edu/agh/school/Student.java
+ pl.edu.agh.school.Student
+pl/edu/agh/logger/IMessageSerializer.java
+ pl.edu.agh.logger.IMessageSerializer
+pl/edu/agh/school/Mark.java
+ pl.edu.agh.school.Mark
+pl/edu/agh/logger/ConsoleMessageSerializer.java
+ pl.edu.agh.logger.ConsoleMessageSerializer
+pl/edu/agh/school/PersonType.java
+ pl.edu.agh.school.PersonType
+pl/edu/agh/school/Lesson.java
+ pl.edu.agh.school.Lesson
+pl/edu/agh/school/DayOfWeek.java
+ pl.edu.agh.school.DayOfWeek
+pl/edu/agh/school/SchoolClass.java
+ pl.edu.agh.school.SchoolClass
+pl/edu/agh/logger/Logger.java
+ pl.edu.agh.logger.Logger
+pl/edu/agh/school/Subject.java
+ pl.edu.agh.school.Subject
+pl/edu/agh/logger/FileMessageSerializer.java
+ pl.edu.agh.logger.FileMessageSerializer
+pl/edu/agh/school/demo/SchoolDemo.java
+ pl.edu.agh.school.demo.SchoolDemo
+pl/edu/agh/school/guice/SchoolModule.java
+ pl.edu.agh.school.guice.SchoolModule
+pl/edu/agh/school/persistence/IPersistenceManager.java
+ pl.edu.agh.school.persistence.IPersistenceManager
+pl/edu/agh/school/persistence/SerializablePersistenceManager.java
+ pl.edu.agh.school.persistence.SerializablePersistenceManager
+pl/edu/agh/school/SchoolDAO.java
+ pl.edu.agh.school.SchoolDAO
