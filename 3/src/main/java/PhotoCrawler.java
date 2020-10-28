@@ -1,3 +1,4 @@
+import io.reactivex.rxjava3.core.Observable;
 import model.Photo;
 import util.PhotoDownloader;
 import util.PhotoProcessor;
@@ -29,17 +30,27 @@ public class PhotoCrawler {
     }
 
     public void downloadPhotoExamples() {
-        try {
-            List<Photo> downloadedExamples = photoDownloader.getPhotoExamples();
-            for (Photo photo : downloadedExamples) {
-                photoSerializer.savePhoto(photo);
-            }
-        } catch (IOException e) {
-            log.log(Level.SEVERE, "Downloading photo examples error", e);
-        }
+        photoDownloader.getPhotoExamples()
+                .compose(this::processPhotos)
+                .subscribe(photoSerializer::savePhoto);
+
     }
 
-    public void downloadPhotosForQuery(String query) throws IOException {
-        // TODO Implement me :(
+    public void downloadPhotosForQuery(String query) {
+        photoDownloader.searchForPhotos(query)
+                .compose(this::processPhotos)
+                .subscribe(photoSerializer::savePhoto);
+    }
+
+    public void downloadPhotosForMultipleQueries(List<String> topics){
+        photoDownloader.searchForPhotos(topics)
+                .compose(this::processPhotos)
+                .subscribe(photoSerializer::savePhoto);
+    }
+
+    public Observable<Photo> processPhotos(Observable<Photo> observable){
+        return observable
+                .filter(photoProcessor::isPhotoValid)
+                .map(photoProcessor::convertToMiniature);
     }
 }
