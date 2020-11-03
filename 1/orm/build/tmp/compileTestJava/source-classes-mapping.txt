@@ -1,2 +1,0 @@
-pl/edu/agh/iisg/to/OrmTest.java
- pl.edu.agh.iisg.to.OrmTest

@@ -1,2 +1,0 @@
-pl/edu/agh/iisg/to/ActiveRecordTest.java
- pl.edu.agh.iisg.to.ActiveRecordTest
