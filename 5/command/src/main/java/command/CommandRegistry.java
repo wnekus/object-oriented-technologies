@@ -14,6 +14,7 @@ public class CommandRegistry {
 	public void executeCommand(Command command) {
 		command.execute();
 		commandStack.add(command);
+		undoCommandStack.clear();
 	}
 
 	public void redo() {
